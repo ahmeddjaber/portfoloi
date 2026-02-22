@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Djaber | Web-site Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle Checkbox (hidden) -->
+    <input type="checkbox" id="theme-toggle" class="theme-toggle">
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="container header__container">
+                <a href="#home" class="logo">Iflah Ahmed Djaber</a>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Theme Toggle Label -->
+                <label for="theme-toggle" class="theme-toggle-label">
+                    <span class="toggle-icon toggle-icon--sun">☀</span>
+                    <span class="toggle-icon toggle-icon--moon">☾</span>
+                </label>
+
+                <!-- Mobile Menu Toggle -->
+                <label for="mobile-menu" class="mobile-menu-label">
+                    <span class="hamburger"></span>
+                </label>
+                <input type="checkbox" id="mobile-menu" class="mobile-menu-checkbox">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero__bg">
+                    <div class="hero__blob hero__blob--1"></div>
+                    <div class="hero__blob hero__blob--2"></div>
+                    <div class="hero__blob hero__blob--3"></div>
+                </div>
+                <div class="container hero__container">
+                    <div class="hero__content">
+                        <span class="hero__badge">Available for Work</span>
+                        <h1 class="hero__title">
+                            Hi, I'm <span class="hero__name">iflah Ahmed Djaber</span> — <br>
+                            <span class="hero__role">Web-site Developer</span>
+                        </h1>
+                        <p class="hero__subtitle">
+                            Crafting beautiful, responsive, and user-friendly web experiences with modern design and clean code.
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#skills" class="btn btn--primary">
+                                <span class="btn__text">View Projects</span>
+                                <span class="btn__ripple"></span>
+                            </a>
+                            <a href="#contact" class="btn btn--secondary">
+                                <span class="btn__text">Contact Me</span>
+                                <span class="btn__ripple"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__visual">
+                        <div class="hero__code-block">
+                            <div class="code-block__header">
+                                <span class="code-block__dot code-block__dot--red"></span>
+                                <span class="code-block__dot code-block__dot--yellow"></span>
+                                <span class="code-block__dot code-block__dot--green"></span>
+                            </div>
+                            <pre class="code-block__content"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Ahmed Djaber"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Web-site Developer"</span>,
+  <span class="code-property">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JavaScript"</span>, <span class="code-string">"php"</span>, <span class="code-string">"sql"</span>],
+  <span class="code-property">passion</span>: <span class="code-string">"Creating amazing web experiences"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="container">
+                    <h2 class="section__title">About Me</h2>
+                    <div class="about__grid">
+                        <div class="about__card">
+                            <div class="profile-card">
+                                <div class="profile-card__avatar">
+                                    <img src="image/ahmed.JPG" alt="Ahmed Djaber" class="profile-card__avatar-img">
+                                </div>
+                                <h3 class="profile-card__name">Ahmed Djaber</h3>
+                                <p class="profile-card__role">Web-site Developer</p>
+                                <div class="profile-card__socials">
+                                 <a href="https://github.com/ahmeddjaber" class="social-btn"><img src="image/github.png" alt=""></a>
+                                    <a href="https://www.linkedin.com/in/iflah-ahmed-djaber-299456271?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-btn"><img src="image/linkedin.png" alt=""></a>
+                                    <a href="https://www.instagram.com/ahmeddjabariflah?igsh=c3Rma3FjZjhzeHdn" class="social-btn"><img src="image/instagram.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__content">
+                            <p class="about__text">
+                                I'm a passionate Web-site Developer with a keen eye for design and a love for creating seamless user experiences. With a strong foundation in modern web technologies, I transform ideas into responsive, accessible, and performant websites.
+                            </p>
+                            <p class="about__text">
+                                I believe in continuous learning and staying updated with the latest web development trends. My approach combines technical expertise with creative problem-solving to deliver exceptional results.
+                            </p>
+                            <div class="about__stats">
+                                <div class="stat-pill">
+                                    <span class="stat-pill__number">6+</span>
+                                    <span class="stat-pill__label">months Experience</span>
+                                </div>
+                                <div class="stat-pill">
+                                    <span class="stat-pill__number">3+</span>
+                                    <span class="stat-pill__label">Projects Completed</span>
+                                </div>
+                                <div class="stat-pill">
+                                    <span class="stat-pill__number">∞</span>
+                                    <span class="stat-pill__label">Learning Mindset</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills">
+                <div class="container">
+                    <h2 class="section__title">Skills & Expertise</h2>
+                    <div class="skills__grid">
+                        <!-- Web-site Card -->
+                        <div class="skill-card">
+                            <div class="skill-card__header">
+                                <h3 class="skill-card__title">Web-site</h3>
+                                <span class="skill-card__icon">⚡</span>
+                            </div>
+                            <div class="skill-card__content">
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">HTML5</span>
+                                        <span class="skill-item__percent">95%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">CSS</span>
+                                        <span class="skill-item__percent">90%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">JavaScript</span>
+                                        <span class="skill-item__percent">50%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 50%"></div>
+                                    </div>
+                                </div>
+                                
+                                      
+                                
+                            </div>
+                            <div class="skill-card__badges">
+                                <span class="badge">Sass</span>
+                                <span class="badge">Tailwind</span>
+                                <span class="badge">Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <!-- Back-end Card -->
+                        <div class="skill-card">
+                            <div class="skill-card__header">
+                                <h3 class="skill-card__title">Back-End</h3>
+                                <span class="skill-card__icon">🔧</span>
+                            </div>
+                            <div class="skill-card__content">
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">php</span>
+                                        <span class="skill-item__percent">80%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">sql</span>
+                                        <span class="skill-item__percent">70%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 70%"></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="skill-card__badges">
+                                <span class="badge">Express</span>
+                                <span class="badge">REST API</span>
+                                <span class="badge">GraphQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Tools Card -->
+                        <div class="skill-card">
+                            <div class="skill-card__header">
+                                <h3 class="skill-card__title">Tools & Others</h3>
+                                <span class="skill-card__icon">🛠</span>
+                            </div>
+                            <div class="skill-card__content">
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">Git hub</span>
+                                        <span class="skill-item__percent">70%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-item__info">
+                                        <span class="skill-item__name">canva</span>
+                                        <span class="skill-item__percent">80%</span>
+                                    </div>
+                                    <div class="skill-item__bar">
+                                        <div class="skill-item__progress" style="--progress: 80%"></div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                            <div class="skill-card__badges">
+                                <span class="badge">VS Code</span>
+                                <span class="badge">Webpack</span>
+                                <span class="badge">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <div class="container">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <div class="contact__grid">
+                        <div class="contact__info">
+                            <div class="contact-card">
+                                <span class="contact-card__icon">✉</span>
+                                <h3 class="contact-card__title">Email</h3>
+                                <p class="contact-card__text">ahmed200630chorfa@email.com</p>
+                            </div>
+                            <div class="contact-card">
+                                <span class="contact-card__icon">📍</span>
+                                <h3 class="contact-card__title">Location</h3>
+                                <p class="contact-card__text">Bab Elzzouar, Algiers, Algeria</p>
+                            </div>
+                            <div class="contact-card">
+                                <span class="contact-card__icon">🔗</span>
+                                <h3 class="contact-card__title">Socials</h3>
+                                <div class="contact-card__socials">
+                                    <a href="https://github.com/ahmeddjaber" class="social-btn"><img src="image/github.png" alt=""></a>
+                                    <a href="https://www.linkedin.com/in/iflah-ahmed-djaber-299456271?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-btn"><img src="image/linkedin.png" alt=""></a>
+                                    <a href="https://www.instagram.com/ahmeddjabariflah?igsh=c3Rma3FjZjhzeHdn" class="social-btn"><img src="image/instagram.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <form name="contact" method="POST" data-netlify="true" action="/thankyou.html">
+                            <input type="hidden" name="form-name" value="contact">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-input form-textarea" required placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full">
+                                <span class="btn__text">Send Message</span>
+                                <span class="btn__ripple"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <p class="footer__copy">© 2026 Iflah Ahmed Djaber. All rights reserved.</p>
+                <div class="footer__links">
+                  
+                </div>
+            </div>
+        </footer>
