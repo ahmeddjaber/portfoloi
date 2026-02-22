@@ -1,0 +1,41 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="gradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"></stop>
+      <stop offset="100%" stop-color="#06B6D4"></stop>
+    </linearGradient>
+
+    <!-- Soft glow -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.55 0" result="glowBlur"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="glowBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer gradient ring with glow -->
+  <circle cx="128" cy="128" r="108" fill="none" stroke="url(#gradMain)" stroke-width="10" filter="url(#glow)"></circle>
+
+  <!-- Dark inner circle -->
+  <circle cx="128" cy="128" r="100" fill="#0B1220"></circle>
+
+  <!-- Subtle highlight -->
+  <path d="M52 112c18-44 64-70 108-62" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="10" stroke-linecap="round"></path>
+
+  <!-- ADI text -->
+  <text x="128" y="122" text-anchor="middle" dominant-baseline="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="64" font-weight="900" fill="url(#gradMain)" letter-spacing="2">
+    ADI
+  </text>
+
+  <!-- tagline -->
+  <text x="128" y="162" text-anchor="middle" dominant-baseline="middle" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="12" font-weight="700" fill="#94A3B8" letter-spacing="3">
+    DEVELOPER
+  </text>
+</svg>
