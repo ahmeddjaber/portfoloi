@@ -95,6 +95,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 body {
@@ -106,7 +107,9 @@ body {
     color: var(--color-text-primary);
     background: var(--color-bg-primary);
     transition: background-color var(--transition-slow), color var(--transition-slow);
+    overflow-x: hidden;
     overflow-x: clip;
+    max-width: 100%;
 }
 
 body::before {
@@ -174,7 +177,7 @@ section {
 .header__container {
     min-height: var(--header-height);
     display: grid;
-    grid-template-columns: 1fr auto auto;
+    grid-template-columns: minmax(0, 1fr) auto auto;
     align-items: center;
     gap: var(--space-md);
 }
@@ -419,6 +422,8 @@ section {
     line-height: 1.1;
     letter-spacing: -0.03em;
     text-wrap: balance;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .hero__name {
@@ -438,6 +443,14 @@ section {
     max-width: 58ch;
     font-size: var(--fs-lg);
     color: var(--color-text-secondary);
+    overflow-wrap: anywhere;
+}
+
+.header,
+.main,
+section,
+.footer {
+    overflow-x: clip;
 }
 
 .hero__buttons {
@@ -1081,7 +1094,7 @@ section {
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
     .header__container {
         grid-template-columns: 1fr auto auto;
     }
@@ -1158,6 +1171,10 @@ section {
 }
 
 @media (max-width: 640px) {
+    .hero__title br {
+        display: none;
+    }
+
     .hero__buttons {
         flex-direction: column;
         align-items: stretch;
