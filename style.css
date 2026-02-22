@@ -1107,6 +1107,21 @@ section,
         grid-template-columns: 1fr;
     }
 
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1.5rem, 3vw, 3rem);
+    }
+
+    .hero__content {
+        order: 1;
+    }
+
+    .hero__visual,
+    .hero__code {
+        order: 2;
+    }
+
     .hero__content,
     .about__content {
         text-align: center;
@@ -1228,8 +1243,8 @@ section,
     }
 
     .hero__visual {
-        order: -1;
-        margin-bottom: var(--space-lg);
+        order: 2;
+        margin-bottom: 0;
     }
 
     .hero__code-block {
